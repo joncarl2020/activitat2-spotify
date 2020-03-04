@@ -6,3 +6,200 @@ Green: #00B172
 White: #FFF
 
 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+}
+
+nav {
+    position: fixed;/*immovilizamos el nav  */
+    display: flex; 
+    justify-content: space-between;/* para colocar el menu a la derecha */
+    align-items: center;
+    width: 100vw;
+    height: 14vh;
+    background-color: white; /* color fondo */
+} 
+ nav img {
+    height: 90px;/* ajustamos logo */
+    /* position: relative;
+    left: 4%; */
+} 
+
+nav ul {
+    display: flex;/* pasamos horizontal */
+    justify-content: space-evenly;/* damos espaciado entre los items */
+    width: 40%;
+    list-style-type: none; /* eliminamos las viñetas */
+}
+
+nav ul li {
+    font-size: 32px;
+    /* font-weight: 10; */
+}
+
+.landing-page {
+    width: 100vw;
+    height:1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    color:white;
+}
+
+.landing-page h1 {
+    font-size: 6rem; 
+    /* letter-spacing: 1px;  */
+    text-align: center;
+   /*  position: relative;
+    top:20px */
+} 
+ 
+.landing-page h4 {
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: 0px;
+    font-weight: 100;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;/* lo colocamos como columna para luego hacer justify */
+    justify-content: center;/* centramos  */
+    align-items: center;  /* centramos todos los items, y el subrayado */
+}
+.main-page h3 {
+    text-align: center;
+    font-size: 3rem;
+    height: 60px;
+    border-bottom: 5px solid #00B172;/* aplicamos subrayado */
+}
+
+.icons-div {
+    display: flex; /* colocamos horizontal */
+    width: 90%;
+    height: 600px;
+    justify-content: space-between; /* espaciado entre items */
+    align-items: center;   
+  
+}
+
+.icons {
+    display: flex;
+    width: 30%;
+    height: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imagen {
+    width: 200px;/* Ajustamos tamaño de imagen */
+
+}
+
+.icons h5 {
+    font-size: 2.6rem;
+    text-align: center;
+    color: #00B172;
+    margin: 0;
+
+}
+
+.icons p {
+    width: 70%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1;
+}
+
+.yeezy {
+    background-color: #00B172;/* color de fondo */  
+    width:95%;  /* espacion alrecedor de la caja verde */
+    height: 1000px;
+    margin-bottom: 50px;
+    display: flex; /* para colocar imagen a los lados */
+    justify-content: space-between;
+    align-items: center;   
+    color:white;
+   
+    
+
+}
+.yeezy img {
+    height: 180px;    
+}
+
+.yeezy .right {
+/*no se coloco las modificaciones en ""yeezy img*, ya que de esta manera se logra encajar afectando menos la imagen*/
+   width: 46%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+}
+
+.yeezy .right img {
+    height: 90%;
+}
+
+.yeezy .left {
+
+    width: 46%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;/* colocamos cada item debajo del otro */
+    align-items: start; /* el subrayado se mantiene en la oraciona */
+    position: relative;
+    /* justify-content: space-around *//*Intente utilizarlo para arreglar el espacio en "DISCOVER" pero se mueve todo*/
+    
+}
+
+.yeezy h3 {
+    position: relative;/* relativo para poder aplicar la instruccion de left */
+    left: 80px; /* espaciado izquierdo */
+    padding-bottom: 10px;/* espacio entre la oracion y el subrayado */
+    border-bottom: 4px solid white;/* subrayamos */
+    font-size: 2.5rem;
+}
+
+.son_yeezy {
+    height: 200px;
+    width: 60%;
+    position: relative;
+    left: 80px;
+
+
+}
+
+.son_yeezy h4 {
+  
+    font-size: 2.4rem;
+    height: 2%;
+    
+    
+ 
+}
+
+.son_yeezy p {
+    font-size: 2rem;
+   
+}
+
